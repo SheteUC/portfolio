@@ -12,24 +12,49 @@ export const Stats = () => {
             <span className="font-bold ml-2">Technical Expertise</span>
           </h4>
           <div className="flex flex-wrap gap-2 mb-12">
-            {/* Programming Languages */}
+            {/* Languages */}
             <Chip>Python</Chip>
+            <Chip>TypeScript</Chip>
+            <Chip>SQL</Chip>
             <Chip>Java</Chip>
-            <Chip>JavaScript</Chip>
             <Chip>Rust</Chip>
             <Chip>C/C++</Chip>
-            <Chip>Java</Chip>
 
+            {/* Frontend Development */}
+            <Chip>React</Chip>
+            <Chip>Astro</Chip>
+            <Chip>D3.js</Chip>
+            <Chip>Bootstrap</Chip>
+            <Chip>Tailwind CSS</Chip>
+            <Chip>Next.js</Chip>
+            <Chip>Figma</Chip>
+            <Chip>Vite</Chip>
 
-            {/* Back-End Development */}
+            {/* Backend & Database */}
             <Chip>Django</Chip>
-            <Chip>SQL</Chip>
+            <Chip>PostgreSQL</Chip>
+            <Chip>RESTful APIs</Chip>
+            <Chip>FastAPI</Chip>
+            <Chip>Node.js</Chip>
+            <Chip>Express.js</Chip>
+            <Chip>GraphQL</Chip>
+            <Chip>MongoDB</Chip>
 
-            {/* Tools & Platforms */}
-            <Chip>Git</Chip>
-            <Chip>GitHub Actions</Chip>
-            <Chip>AWS (EC2, S3)</Chip>
+            {/* AI, ML & Data Engineering */}
+            <Chip>RAG</Chip>
+            <Chip>LLM Agents</Chip>
+            <Chip>Multi-Agent Systems</Chip>
+            <Chip>Vector Embeddings</Chip>
+            <Chip>Pandas</Chip>
+            <Chip>Scrapy</Chip>
+
+            {/* Cloud, Tools & APIs */}
             <Chip>Docker</Chip>
+            <Chip>AWS</Chip>
+            <Chip>Azure</Chip>
+            <Chip>Postman</Chip>
+            <Chip>CI/CD</Chip>
+            <Chip>Linux / Bash</Chip>
 
             {/* Specialized Skills */}
             <Chip>PLC Allen Bradley</Chip>

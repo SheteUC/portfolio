@@ -18,6 +18,33 @@ export const Projects = () => {
 
 const projects = [
   {
+    title: "Wardline",
+    imgSrc: "project-imgs/wardline-screenshot.png",
+    code: "https://github.com/SheteUC/Wardline",
+    projectLink: "#",
+    tech: ["Python", "Twilio Voice API", "LLM Agents", "PostgreSQL"],
+    description:
+      "HIPAA-compliant patient intake system with stateful call flows automating scheduling for high-volume medical offices, reducing manual administrative triage by 40%.",
+  },
+  {
+    title: "MarketGap",
+    imgSrc: "placeholder",
+    code: "https://github.com/SheteUC/market-gap",
+    projectLink: "#",
+    tech: ["Python", "Letta (MemGPT)", "React", "TypeScript", "REST APIs"],
+    description:
+      "Scalable multi-agent research engine automating market data scraping from 10+ concurrent sources with stateful architecture and RESTful API endpoints.",
+  },
+  {
+    title: "RegImpact AI",
+    imgSrc: "project-imgs/regimpactai-screenshot.png",
+    code: "https://github.com/SheteUC/RegImpact-AI",
+    projectLink: "https://regimpact-ai.vercel.app/",
+    tech: ["Python", "Perplexity API", "Vector Embeddings", "React"],
+    description:
+      "RAG-powered healthcare regulatory intelligence tool processing complex federal regulations into actionable JSON insights for small medical practices.",
+  },
+  {
     title: "Dr. Shailaja's Website",
     imgSrc: "project-imgs/drshailajashete-com-screenshot.png",
     code: "https://www.github.com",
@@ -37,18 +64,18 @@ const projects = [
   },
   {
     title: "Market Report Automation",
-    imgSrc: "project-imgs/market-report-screenshot.png",
+    imgSrc: "placeholder",
     code: "https://github.com/Jayko001/market-report",
-    projectLink: "javascript:void(0)",
+    projectLink: "#",
     tech: ["Python", "Pandas", "Scrapy", "Excel"],
     description:
       "Competitor analysis system generating investor-ready documentation from raw financial data.",
   },
   {
     title: "MedicAi Platform",
-    imgSrc: "project-imgs/medicai-screenshot.png",
+    imgSrc: "placeholder",
     code: "https://github.com/SheteUC/medicai",
-    projectLink: "javascript:void(0)",
+    projectLink: "#",
     tech: ["React", "Django", "PubMed API", "PostgreSQL"],
     description:
       "Clinical decision support system analyzing patient histories to surface relevant medical research.",

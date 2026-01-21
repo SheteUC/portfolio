@@ -12,20 +12,17 @@ export const About = () => {
       <div className="space-y-4">
         <Reveal>
           <p className="leading-relaxed text-zinc-300">
-            {/* <span className="bg-indigo-500 text-white py-2 px-3 rounded font-bold mr-1 float-left text-2xl">
-              O
-            </span> */}
-            Over the past few years, I&apos;ve worked on a mix of projects, from building websites to creating automation systems, which helped me learn how to solve tough problems. I&apos;ve held roles like Senior Venture Analyst and Controls Engineering Co-op, where I worked with teams to tackle real-world challenges and deliver results.
+            I specialize in building AI-powered healthcare solutions and intelligent automation systems. Recently, I&apos;ve been working on HIPAA-compliant patient intake platforms, multi-agent research engines, and RAG-based regulatory intelligence tools that transform how medical practices operate.
           </p>
         </Reveal>
         <Reveal>
           <p className="leading-relaxed text-zinc-300">
-            Outside of work, I enjoy organizing events like the RevolutionUC Hackathon and mentoring others. These experiences have taught me a lot about teamwork and leadership while giving me a chance to give back to my community.
+            My experience spans roles like Senior Venture Analyst and Controls Engineering Co-op, where I&apos;ve combined technical expertise with business insight to deliver scalable solutions. I like turning complex problems into practical applications.
           </p>
         </Reveal>
         <Reveal>
           <p className="leading-relaxed text-zinc-300">
-            I&apos;m now looking for Spring/Summer 2025 co-op opportunities to keep learning and making a difference. If you&apos;re looking for someone who loves solving problems and bringing new ideas to life, let&apos;s connect!
+            Beyond coding, I organize events like the RevolutionUC Hackathon and mentor aspiring developers. I&apos;m currently seeking full-time opportunities where I can leverage LLMs, multi-agent systems, and modern web technologies to build products that make a real impact.
           </p>
         </Reveal>
         <Reveal>

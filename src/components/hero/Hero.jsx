@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="pointer-events-none relative z-10">
           <Reveal>
             <h1 className="pointer-events-auto text-4xl sm:text-6xl font-black text-zinc-100 md:text-8xl">
-              Hi, I'm Atharv<span className="text-indigo-500">.</span>
+              Hi, I'm Atharv<span className="text-indigo-500">!</span>
             </h1>
           </Reveal>
           <Reveal>

@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { ProjectModal } from "./ProjectModal";
 import Reveal from "../util/Reveal";
+import { ProjectPlaceholder } from "./ProjectPlaceholder";
 
 export const Project = ({
   projectLink,
@@ -48,15 +49,19 @@ export const Project = ({
           onClick={() => setIsOpen(true)}
           className="w-full aspect-video bg-zinc-700 cursor-pointer relative rounded-lg overflow-hidden"
         >
-          <img
-            src={imgSrc}
-            alt={`An image of the ${title} project.`}
-            style={{
-              width: hovered ? "90%" : "85%",
-              rotate: hovered ? "2deg" : "0deg",
-            }}
-            className="w-[85%] absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/4 transition-all rounded"
-          />
+          {imgSrc === "placeholder" ? (
+            <ProjectPlaceholder title={title} hovered={hovered} />
+          ) : (
+            <img
+              src={imgSrc}
+              alt={`An image of the ${title} project.`}
+              style={{
+                width: hovered ? "90%" : "85%",
+                rotate: hovered ? "2deg" : "0deg",
+              }}
+              className="w-[85%] absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/4 transition-all rounded"
+            />
+          )}
         </div>
         <div className="mt-6">
           <Reveal width="w-full">
@@ -70,9 +75,15 @@ export const Project = ({
                 <AiFillGithub className="text-xl text-zinc-300 hover:text-indigo-300 transition-colors" />
               </Link>
 
-              <Link href={projectLink} target="_blank" rel="nofollow">
-                <AiOutlineExport className="text-xl text-zinc-300 hover:text-indigo-300 transition-colors" />
-              </Link>
+              {projectLink !== "#" ? (
+                <Link href={projectLink} target="_blank" rel="nofollow">
+                  <AiOutlineExport className="text-xl text-zinc-300 hover:text-indigo-300 transition-colors" />
+                </Link>
+              ) : (
+                <span className="text-xl text-zinc-600 cursor-not-allowed">
+                  <AiOutlineExport />
+                </span>
+              )}
             </div>
           </Reveal>
           <Reveal>

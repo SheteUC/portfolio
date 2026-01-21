@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
+import { ProjectPlaceholder } from "./ProjectPlaceholder";
 
 export const ProjectModal = ({
   projectLink,
@@ -39,11 +40,17 @@ export const ProjectModal = ({
         onClick={(e) => e.stopPropagation()}
         className="w-full max-w-2xl h-fit rounded-lg overflow-hidden bg-zinc-900 shadow-lg cursor-auto"
       >
-        <img
-          className="w-full"
-          src={imgSrc}
-          alt={`An image of the ${title} project.`}
-        />
+        {imgSrc === "placeholder" ? (
+          <div className="w-full aspect-video relative bg-zinc-800">
+            <ProjectPlaceholder title={title} hovered={false} />
+          </div>
+        ) : (
+          <img
+            className="w-full"
+            src={imgSrc}
+            alt={`An image of the ${title} project.`}
+          />
+        )}
         <div className="p-8">
           <h4 className="text-3xl font-bold mb-2">{title}</h4>
           <div className="flex flex-wrap gap-2 text-sm text-indigo-300">
@@ -63,14 +70,20 @@ export const ProjectModal = ({
               >
                 <AiFillGithub /> Source Code
               </Link>
-              <Link
-                target="_blank"
-                rel="nofollow"
-                className="text-zinc-300 hover:text-indigo-300 transition-colors flex items-center gap-1"
-                href={projectLink}
-              >
-                <AiOutlineExport /> Live Project
-              </Link>
+              {projectLink !== "#" ? (
+                <Link
+                  target="_blank"
+                  rel="nofollow"
+                  className="text-zinc-300 hover:text-indigo-300 transition-colors flex items-center gap-1"
+                  href={projectLink}
+                >
+                  <AiOutlineExport /> Live Project
+                </Link>
+              ) : (
+                <span className="text-zinc-600 cursor-not-allowed flex items-center gap-1">
+                  <AiOutlineExport /> Live Project
+                </span>
+              )}
             </div>
           </div>
         </div>
