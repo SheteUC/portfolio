@@ -4,6 +4,7 @@ import { Header } from "./nav/Header";
 import Hero from "./hero/Hero";
 import { About } from "./about/About";
 import { Projects } from "./projects/Projects";
+import { Writing } from "./writing/Writing";
 import { Experience } from "./experience/Experience";
 import { Contact } from "./contact/Contact";
 
@@ -17,6 +18,7 @@ export const HomPage = () => {
           <Hero />
           <About />
           <Projects />
+          <Writing />
           <Experience />
           <Contact />
         </div>

@@ -12,7 +12,7 @@ export const About = () => {
       <div className="space-y-4">
         <Reveal>
           <p className="leading-relaxed text-zinc-300">
-            I specialize in building AI-powered healthcare solutions and intelligent automation systems. Recently, I&apos;ve been working on HIPAA-compliant patient intake platforms, multi-agent research engines, and RAG-based regulatory intelligence tools that transform how medical practices operate.
+            I specialize in building AI-powered healthcare solutions and intelligent automation systems. Recently, I&apos;ve been building voice AI infrastructure for medical practices, healthcare policy monitoring tools, and applied LLM products that turn complex workflows into practical software.
           </p>
         </Reveal>
         <Reveal>
@@ -22,7 +22,7 @@ export const About = () => {
         </Reveal>
         <Reveal>
           <p className="leading-relaxed text-zinc-300">
-            Beyond coding, I organize events like the RevolutionUC Hackathon and mentor aspiring developers. I&apos;m currently seeking full-time opportunities where I can leverage LLMs, multi-agent systems, and modern web technologies to build products that make a real impact.
+            Beyond coding, I organize events like the RevolutionUC Hackathon, mentor aspiring developers, and write about reasoning and faithfulness in large language models. I&apos;m currently seeking full-time opportunities where I can leverage LLMs, multi-agent systems, and modern web technologies to build products that make a real impact.
           </p>
         </Reveal>
         <Reveal>

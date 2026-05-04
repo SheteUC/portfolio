@@ -54,6 +54,14 @@ export const SideBar = () => {
       <SideBarLink
         selected={selected}
         setSelected={setSelected}
+        value="writing"
+        href="#writing"
+      >
+        Writing
+      </SideBarLink>
+      <SideBarLink
+        selected={selected}
+        setSelected={setSelected}
         value="experience"
         href="#experience"
       >

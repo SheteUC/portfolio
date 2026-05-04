@@ -22,9 +22,27 @@ const projects = [
     imgSrc: "project-imgs/wardline-screenshot.png",
     code: "https://github.com/SheteUC/Wardline",
     projectLink: "#",
-    tech: ["Python", "Twilio Voice API", "LLM Agents", "PostgreSQL"],
+    tech: ["Next.js", "NestJS", "FastAPI", "Twilio", "PostgreSQL"],
     description:
-      "HIPAA-compliant patient intake system with stateful call flows automating scheduling for high-volume medical offices, reducing manual administrative triage by 40%.",
+      "Business-native AI voice receptionist for independent practices: live calls via Twilio with dashboard visibility into interactions—searchable call logs, intent labels, transcription previews, completion and handoff tracking—backed by NestJS, FastAPI voice runtime, and PostgreSQL.",
+  },
+  {
+    title: "PolicyPulse",
+    imgSrc: "project-imgs/policypulse-screenshot.png",
+    code: "https://github.com/SheteUC/PolicyPulse",
+    projectLink: "#",
+    tech: ["React", "TypeScript", "Cloudflare Workers", "D1", "OpenAI"],
+    description:
+      "Healthcare policy change monitoring platform that tracks updates, summarizes meaningful diffs with AI, and sends personalized alerts so medical teams can act on regulatory changes faster.",
+  },
+  {
+    title: "Hydrogenix",
+    imgSrc: "project-imgs/hydrogenix-screenshot.png",
+    code: "https://github.com/SheteUC/Hydrogenix",
+    projectLink: "https://www.hydrogenixint.com/",
+    tech: ["Marketing Site", "Oil & Gas", "UAE"],
+    description:
+      "Commercial web presence for HydroGenix International: global energy sourcing, UAE market representation, vendor support, and integrated supply-chain messaging across upstream through downstream.",
   },
   {
     title: "MarketGap",
